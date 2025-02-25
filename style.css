@@ -86,11 +86,10 @@ body {
     padding: 12px;
     border-radius: 8px;
     font: var(--theme-font-3);
-    /* transition: color 0.5s, background-color 0.5s; */
   }
 
   li:hover {
-    animation: hover-in 1000ms ease-in;
+    animation: hover-in var(--animation-time) ease-in;
     background-color: var(--theme-color-green);
     color: var(--theme-color-gray-777);
     cursor: pointer;
@@ -133,5 +132,5 @@ body {
 }
 
 .attribution a:hover {
-    color: #e8fdaa;
+  color: #e8fdaa;
 }

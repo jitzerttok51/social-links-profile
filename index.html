@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Social links profile</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="card">
-        <img class="profile-pic" src="assets/images/avatar-jessica.jpeg" alt="">
-        <header>
-            <h3>Jessica Randall</h3>
-            <small>London, United Kingdom</small>
-        </header>
-        <p class="bio">
-            "Front-end developer and avid reader."
-        </p>
-        <ul>
-            <li>GitHub</li>
-            <li>Frontend Mentor</li>
-            <li>LinkedIn</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-        </ul>
+      <img class="profile-pic" src="assets/images/avatar-jessica.jpeg" alt="" />
+      <header>
+        <h3>Jessica Randall</h3>
+        <small>London, United Kingdom</small>
+      </header>
+      <p class="bio">
+        "Front-end developer and avid reader."
+      </p>
+      <ul>
+        <li>GitHub</li>
+        <li>Frontend Mentor</li>
+        <li>LinkedIn</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+      </ul>
     </section>
     <footer class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by 
+      <a href="#">Your Name Here</a>.
+    </footer>
     <script>
-        document.querySelectorAll('li').forEach(el=> {
-            const addHover = () => {
-                el.classList.add('remove-hover');
-                el.removeEventListener('mouseover', addHover);
-            }
-            el.addEventListener('mouseover', addHover);
-        })
+      document.querySelectorAll("li").forEach((el) => {
+        const addHover = () => {
+          el.classList.add("remove-hover");
+          el.removeEventListener("mouseover", addHover);
+        };
+        el.addEventListener("mouseover", addHover);
+      });
     </script>
-</body>
+  </body>
 </html>
