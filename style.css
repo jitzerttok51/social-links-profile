@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: var(--theme-color-white);
+}
+
+html {
+  --theme-color-gray-900: #141414;
+  --theme-color-gray-800: #1f1f1f;
+  --theme-color-gray-777: #333333;
+  --theme-color-green: #c4f82a;
+  --theme-color-white: #ffffff;
+
+  --theme-font-1: 700 24px/150% "Inter";
+  --theme-font-2: 300 14px/150% "Inter";
+  --theme-font-3: 600 14px/150% "Inter";
+
+  --animation-time: 600ms;
+}
+
+body {
+  background-color: var(--theme-color-gray-900);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--theme-color-gray-800);
+  padding: 40px;
+  width: 384px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  border-radius: 12px;
+
+  .profile-pic {
+    display: block;
+    width: 88px;
+    border-radius: 100%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    h3 {
+      font: var(--theme-font-1);
+    }
+
+    small {
+      font: var(--theme-font-3);
+      color: var(--theme-color-green);
+    }
+  }
+
+  .bio {
+    font: var(--theme-font-2);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  li {
+    background-color: var(--theme-color-gray-777);
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font: var(--theme-font-3);
+    /* transition: color 0.5s, background-color 0.5s; */
+  }
+
+  li:hover {
+    animation: hover-in 1000ms ease-in;
+    background-color: var(--theme-color-green);
+    color: var(--theme-color-gray-777);
+    cursor: pointer;
+  }
+
+  .remove-hover {
+    animation: hover-out var(--animation-time) ease-out;
+  }
+}
+
+@keyframes hover-in {
+  from {
+    background-color: var(--theme-color-gray-777);
+  }
+  to {
+    background-color: var(--theme-color-green);
+    color: var(--theme-color-gray-777);
+  }
+}
+
+@keyframes hover-out {
+  from {
+    background-color: var(--theme-color-green);
+    color: var(--theme-color-gray-777);
+  }
+  to {
+    background-color: var(--theme-color-gray-777);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+.attribution a {
+  color: var(--theme-color-green);
+}
+
+.attribution a:hover {
+    color: #e8fdaa;
+}
